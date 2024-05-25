@@ -1,5 +1,5 @@
 +++
-title = "FreeBSD Nas"
+title = "FreeBSD NAS"
 date = "2023-11-19T13:27:16+01:00"
 
 #
