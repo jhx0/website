@@ -68,7 +68,7 @@ $HTTP["host"] =~ "iso\.void\.lan" {
 }
 ```
 Let me explain a little.   
-This snippet specifies that when a request enters our webserver with the hostname `iso.seven.lan` it should set the **Document Root** to `/data/iso` and it should enable **Directory Listings**.   
+This snippet specifies that when a request enters our webserver with the hostname `iso.void.lan` it should set the **Document Root** to `/data/iso` and it should enable **Directory Listings**.   
 **Note:** `/data/iso` is my local **ISO** directory where all my files are stored. You need to change this to the location where your **ISO's** are saved!
 
 To check if our configuration was successful we can run **Lighttpd** with certain flags - this will dump all configuration parameters to **stdout** for us to inspect.
@@ -81,7 +81,7 @@ You should see the above config snippet at the end of the output.
 
 **Quick and dirty**: If you just want to test out that it works you can of course make a simple entry in your `/etc/hosts` file. Simple and quick!
 
-# Give me permision
+# Give me permission
 The final step before starting **Lighttpd** is to check the permissions of the files we want to serve - and the directories for that matter!
 
 In my case I need to **chown** the directories in question to make it able for the user `www` (Which **Lighttpd** runs as) to read files inside these directories.
